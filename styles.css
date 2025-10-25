@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
+
+.container {
+    width: 400px;
+    min-height: 600px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e7;
+}
+
+.version-info {
+    font-size: 10px;
+    color: #86868b;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1d1d1f;
+}
+
+header p {
+    color: #86868b;
+    font-size: 14px;
+}
+
+.test-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.test-section h3 {
+    margin: 0 0 10px 0;
+    color: #495057;
+    font-size: 14px;
+}
+
+.test-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-test {
+    padding: 8px 12px;
+    font-size: 12px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-test:hover {
+    background-color: #5a6268;
+}
+
+.upload-section {
+    margin-bottom: 30px;
+}
+
+.file-input-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #007aff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #f8f9ff;
+}
+
+.file-input-label:hover {
+    background: #e6f2ff;
+    border-color: #0056b3;
+}
+
+.file-input-text {
+    font-weight: 500;
+    color: #007aff;
+}
+
+.file-input-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background: #007aff;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.file-name {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #e5e5e7;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1d1d1f;
+}
+
+.preview-section {
+    margin-bottom: 30px;
+}
+
+.preview-section h3 {
+    margin-bottom: 15px;
+    color: #1d1d1f;
+    font-size: 18px;
+}
+
+.question-count {
+    font-size: 14px;
+    font-weight: 400;
+    color: #86868b;
+    margin-left: 8px;
+}
+
+.question-preview {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #e5e5e7;
+    border-radius: 8px;
+    padding: 15px;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.question-item {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #007aff;
+    background: #f8f9ff;
+}
+
+.question-item:last-child {
+    margin-bottom: 0;
+}
+
+.question-text {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #1d1d1f;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.question-number {
+    font-size: 14px;
+    font-weight: 600;
+    color: #007aff;
+}
+
+.question-type {
+    font-size: 12px;
+    color: #86868b;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.question-options {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #515154;
+}
+
+.question-warning {
+    border-left-color: #ff9500 !important;
+    background: #fff8f0 !important;
+}
+
+.question-warning-text {
+    margin-top: 8px;
+    padding: 6px 8px;
+    background: #ff9500;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.preview-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.progress-section {
+    margin-bottom: 30px;
+}
+
+.progress-section h3 {
+    margin-bottom: 15px;
+    color: #1d1d1f;
+    font-size: 18px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e5e5e7;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #34c759;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 14px;
+    color: #515154;
+    margin-bottom: 15px;
+}
+
+.upload-log {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #e5e5e7;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+    font-size: 12px;
+}
+
+.log-entry {
+    padding: 2px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.log-entry:last-child {
+    border-bottom: none;
+}
+
+.log-success {
+    color: #34c759;
+}
+
+.log-error {
+    color: #ff3b30;
+}
+
+.log-info {
+    color: #007aff;
+}
+
+.settings-section h3 {
+    margin-bottom: 15px;
+    color: #1d1d1f;
+    font-size: 18px;
+}
+
+.setting-item {
+    margin-bottom: 15px;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #1d1d1f;
+    font-size: 14px;
+}
+
+.setting-item input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e5e5e7;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+}
+
+.setting-item input:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+.setting-item small {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    color: #86868b;
+    font-style: italic;
+}
+
+.setting-item input[readonly] {
+    background-color: #f5f5f7;
+    color: #6e6e73;
+    cursor: not-allowed;
+    border-color: #d2d2d7;
+}
+
+.setting-item input[readonly]:focus {
+    outline: none;
+    border-color: #d2d2d7;
+    box-shadow: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #007aff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #e5e5e7;
+    color: #1d1d1f;
+}
+
+.btn-secondary:hover {
+    background: #d1d1d6;
+}
+
+.btn-danger {
+    background: #ff3b30;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #d70015;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin-left: 8px;
+    background: #f0f0f0;
+    color: #1d1d1f;
+}
+
+.btn-small:hover {
+    background: #e5e5e7;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* API Analysis Section */
+.api-analysis-section {
+    margin-bottom: 30px;
+}
+
+.api-analysis-section h3 {
+    margin-bottom: 15px;
+    color: #1d1d1f;
+    font-size: 18px;
+}
+
+.api-analysis-results {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e5e5e7;
+    border-radius: 8px;
+    padding: 15px;
+    background: white;
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+    font-size: 12px;
+}
+
+.api-endpoint {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e5e5e7;
+    border-radius: 6px;
+    background: #f8f9ff;
+}
+
+.api-endpoint h4 {
+    margin-bottom: 8px;
+    color: #007aff;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.api-endpoint pre {
+    background: #f0f0f0;
+    padding: 8px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 5px 0;
+}
+
+.form-structure {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.form-structure h5 {
+    margin-bottom: 5px;
+    color: #515154;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}

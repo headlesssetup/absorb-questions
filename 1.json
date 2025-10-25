@@ -1,0 +1,101 @@
+{
+    "id": "527b3655-516c-4146-9ffa-b20a8d54ff69",
+    "correctReply": "<p>correct_reply1</p>",
+    "name": "<p>QQQ1</p>",
+    "order": 1,
+    "questionOptions": [
+        {
+            "id": "84365529-c490-4e67-ba02-08695b0d53db",
+            "name": "<p>AAA1</p>",
+            "isCorrect": false,
+            "order": 1,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "f0126fcc-f098-4242-ba82-902965154ccf",
+            "name": "<p>BBB1</p>",
+            "isCorrect": false,
+            "order": 2,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "da297ee5-d80d-4c66-a846-6c9210f31901",
+            "name": "<p>CCC1</p>",
+            "isCorrect": false,
+            "order": 3,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "f0d87004-fa44-4c1c-905a-80b2d425fd3c",
+            "name": "<p>DDD1</p>",
+            "isCorrect": false,
+            "order": 4,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "af0633f6-8e24-4483-87fb-caec3b099c28",
+            "name": "<p>EEE1</p>",
+            "isCorrect": false,
+            "order": 5,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "c222d593-6818-458f-a1ff-a0e213a455cf",
+            "name": "<p>FFF1</p>",
+            "isCorrect": false,
+            "order": 6,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "2cbb9ab5-a119-4e6e-9571-bf98c563ca15",
+            "name": "<p>GGG1</p>",
+            "isCorrect": true,
+            "order": 7,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "52ccaae1-6ee2-43c2-8d3e-b0eab4c5f698",
+            "name": "<p>HHH1</p>",
+            "isCorrect": false,
+            "order": 8,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "73fc661f-80db-4517-a424-c4a0b7d2f91c",
+            "name": "<p>III1</p>",
+            "isCorrect": false,
+            "order": 9,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        },
+        {
+            "id": "2d382915-b2d9-410b-b6bf-358f29d5f7ba",
+            "name": "<p>JJJ1</p>",
+            "isCorrect": false,
+            "order": 10,
+            "customFieldValue": null,
+            "courseIds": [],
+            "competencies": []
+        }
+    ],
+    "incorrectReply": "<p>incorrect_reply2</p>",
+    "questionType": "SingleAnswer",
+    "attachment": null
+}

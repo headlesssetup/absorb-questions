@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Question Bulk Uploader",
+  "version": "1.1.4",
+  "description": "Upload questions from CSV files with a better UI",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Question Bulk Uploader"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

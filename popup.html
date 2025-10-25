@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bulk Uploader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="version-info">v1.1.3</div>
+            <h1>Question Bulk Uploader</h1>
+            <p>Upload questions from CSV files with ease</p>
+        </header>
+
+        <div class="upload-section">
+            <button id="csvFile" class="btn btn-primary">Choose CSV/Excel File</button>
+            <div id="fileName" class="file-name"></div>
+            <small><a href="#" id="downloadSample">Download sample Excel file</a></small>
+        </div>
+
+        <div class="preview-section" id="previewSection" style="display: none;">
+            <h3>Questions Preview <span id="questionCount" class="question-count"></span></h3>
+            <div id="questionPreview" class="question-preview"></div>
+            <div class="preview-actions">
+                <button id="startUpload" class="btn btn-primary">Start Upload</button>
+                <button id="clearPreview" class="btn btn-secondary">Clear Preview</button>
+            </div>
+        </div>
+
+        <div class="progress-section" id="progressSection" style="display: none;">
+            <h3>Upload Progress</h3>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div id="progressText" class="progress-text">0 / 0 questions uploaded</div>
+            <div id="uploadLog" class="upload-log"></div>
+            <div class="progress-actions">
+                <button id="stopUpload" class="btn btn-danger">Stop Upload</button>
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <h3>Settings</h3>
+                    <div class="setting-item">
+                        <label for="delayMs">Delay between requests (ms):</label>
+                        <input type="number" id="delayMs" value="50" min="10" max="2000">
+                    </div>
+                    <div class="setting-item">
+                        <label for="baseUrl">Base URL:</label>
+                        <input type="text" id="baseUrl" placeholder="/api/rest/v2/admin/question-banks/{question-bank-id}/questions" readonly>
+                        <small>Auto-generated from detected question bank ID</small>
+                    </div>
+                    <div class="setting-item">
+                        <label for="questionBankId">Question Bank ID:</label>
+                        <input type="text" id="questionBankId" placeholder="undetected" readonly>
+                        <button id="detectBankId" class="btn btn-small">🔄</button>
+                        <small>Auto-detected from current page</small>
+                    </div>
+                    <div class="setting-item">
+                        <label for="authToken">Auth Token:</label>
+                        <input type="text" id="authToken" placeholder="Auto-detect from page" readonly>
+                        <small>Auto-detected from page cookies/localStorage</small>
+                    </div>
+        </div>
+
+    </div>
+
+    <script src="xlsx.full.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

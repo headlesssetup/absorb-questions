@@ -1,0 +1,5 @@
+Question Text,Type,Option 1,Option 2,Option 3,Option 4,Option 5,Option 6,Option 7,Option 8,Option 9,Option 10,Correct Answer / Key,Feedback If Correct,Feedback If Wrong
+What is the capital of France?,multiple_choice,Paris,London,Berlin,Madrid,f,s,s,e,n,ten,A,Correct! Paris is the capital of France.,Incorrect. The capital of France is Paris.
+Which of the following are programming languages? (Select all that apply),multiple_response,Python,HTML,CSS,JavaScript,Java,PHP,Ruby,Swift,Go,,"A,E,F",Great job! Python and JavaScript are programming languages.,Not quite right. Python and JavaScript are programming languages, while HTML and CSS are markup/stylesheet languages.
+What is 2 + 2?,short_text,4,four,Four,,,,,,,,"4,four,Four",Correct! 2 + 2 equals 4.,Incorrect. 2 + 2 equals 4.
+What is the largest planet in our solar system?,multiple_choice,Jupiter,Saturn,Neptune,Earth,Mars,Venus,Uranus,Mercury,Pluto,,A,Correct! Jupiter is the largest planet in our solar system.,Incorrect. Jupiter is the largest planet in our solar system.
