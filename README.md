@@ -55,4 +55,4 @@ The extension includes a configurable delay between question uploads to prevent 
 
 ## License
 
-This project is open source. Feel free to modify and distribute according to your needs.
+This project is open source. Feel free to modify and distribute according to your needs. Note that the SheetJS library included in this project is subject to its own licence. More info: https://github.com/SheetJS/
